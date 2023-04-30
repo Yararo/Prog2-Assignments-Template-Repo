@@ -1,0 +1,16 @@
+Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter the value of X: ");
+        int x = sc.nextInt();
+        System.out.print("Enter the value of Y: ");
+        int y = sc.nextInt();
+        int sum = 0;
+        int count = 0;
+        while (count < y) {
+            if (x % 2 != 0) {
+                sum += x;
+                count++;
+            }
+            x++;
+        }
+        System.out.println("The summation of the consecutive " + y + " odd numbers starting from " + (x - y) + " is: " + sum)
