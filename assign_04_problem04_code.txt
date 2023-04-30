@@ -1,0 +1,15 @@
+System.out.println("Enter the number of values you are going to log");
+        int arrNum= in.nextInt();
+        int[] arr= new int[arrNum];
+
+        for(int i=0;i<arrNum;i++){
+            arr[i]= in.nextInt();
+        }
+        for (int F=0;F<arrNum;F++){
+            System.out.println("Un sorted array "+arr[F]);
+        }
+
+        Arrays.sort(arr);
+        for (int j=0;j<arrNum;j++){
+            System.out.println("sorted array "+arr[j] );
+        }

@@ -1,0 +1,21 @@
+System.out.println("Enter the number of values you will log");
+        int logNum= in.nextInt();
+        int[] arr=new int[logNum];
+
+        for(int i=0;i<logNum;i++){
+            arr[i]= in.nextInt();
+        }
+
+        System.out.println("please enter the number you want to check it's Exists index");
+        int check=in.nextInt();
+        boolean found =false;
+
+        for (int j = 0; j < arr.length; j++) { //there is a problem in this part of condition to check value
+            if (arr[j] == check) {
+                found = true;
+                break;
+            }
+            if (found == true) {
+                System.out.println(arr[check] + "Exists in the array");
+            } else
+                System.out.println("Value doesn't Exists");}
