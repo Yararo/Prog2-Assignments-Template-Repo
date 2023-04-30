@@ -1,0 +1,6 @@
+System.out.println("please enter the number you want ;) ");
+        int number = in.nextInt();
+        int sum=0;
+        for(int i=1; i<=12;i++){
+            sum=i*number;
+            System.out.println(i+"*"+number+"="+sum);

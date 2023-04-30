@@ -1,0 +1,11 @@
+int rows;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter Number of Rows of Pattern");
+        rows = scanner.nextInt();
+
+         //ith row of this row contains rows-i+1 star character
+        for (int i = 1; i <= rows; i++) {
+            for (int j = 1; j <= rows - i + 1; j++) {
+                System.out.print("* ");
+            }
+            System.out.print("\n");

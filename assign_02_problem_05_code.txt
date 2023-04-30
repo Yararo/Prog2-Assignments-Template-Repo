@@ -1,0 +1,11 @@
+System.out.println("Enter the number you want to check wither it is prime or not: ");
+        int num = in.nextInt();
+        int sum = 1;
+        for (int i = 1; i < num; i++) {
+            sum = num * (num - 1);
+        }
+
+        if (sum > 2) {
+            System.out.println(num + " is a not prime number");}
+        else{
+            System.out.println(num + " is a prime number");}
