@@ -1,0 +1,52 @@
+name:yara ahmad
+ID:202106503
+public class BankAccount {
+    public double balance;
+    public String username;
+    public String bankName;
+    public String country="Egypt";
+    public double NumOfUsers;
+    public double NumOfCalls;
+    public BankAccount(){balance=0; NumOfUsers=0; NumOfCalls=0;
+    }
+    public void setNumOfUsers(double NU){NumOfUsers+=NU;}
+    public void setNumOfCalls(double NC){
+        NumOfCalls+=NC;
+    }
+    //then make these objects automatically print any text when they are created
+    //other variables
+    public void InitalizeBalance(double x){balance=x;}
+    public void deposite(double D ){
+        balance+=D;
+    }
+    public void withdraw(double W){
+        balance-=W;
+    }
+    public double getNumOfUsers(double NU){return NU;}
+    public  double getNumOfCalls(double ND){return ND;}
+}
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+
+        BankAccount acc1 =new BankAccount();
+        acc1.username="yara";
+        acc1.bankName="QNB";
+        acc1.balance=1000;
+        acc1.deposite(2000);
+        acc1.withdraw(500);
+        acc1.setNumOfUsers(+1);
+
+        BankAccount acc2= new BankAccount();
+        acc2.username="Ggazal";
+        acc2.bankName="QNB";
+        System.out.println("enter the balance");
+        double x= in.nextInt();
+        acc2.InitalizeBalance(x);
+        acc2.deposite(2000);
+        acc2.setNumOfUsers(+1);
+
+    }
+}
