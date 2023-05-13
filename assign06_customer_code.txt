@@ -1,0 +1,23 @@
+
+public class Customer {
+    private String SSN;
+    private String Address;
+    private BankAccount bankAccount;
+
+    public Customer(String name, int age, String gender, String SSN, String address) {
+
+        this.SSN = SSN;
+        this.Address = address;
+        this.bankAccount = new BankAccount();
+    }
+
+    public void PrintData() {
+
+        System.out.println("SSN: " + SSN);
+        System.out.println("Address: " + Address);
+    }
+
+    public void hello(){
+        System.out.println("Hello Sir");
+    }
+}

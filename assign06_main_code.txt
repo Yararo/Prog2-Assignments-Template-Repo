@@ -1,0 +1,20 @@
+public class Main {
+    public static void main(String[] args) {
+
+
+                Employee emp = new Employee("yara", 30, "female", 5000.0, "IT");
+                Customer cust = new Customer("hala", 25, "Female", "123456789", "123 Main St");
+                BankAccount bankAccount = new BankAccount();
+
+                emp.PrintData();
+                System.out.println("Salary: " + emp.getSalary());
+                System.out.println("Department: " + emp.getDepartment());
+                emp.hello();
+
+                System.out.println();
+
+                cust.PrintData();
+                cust.hello();
+
+    }
+}
